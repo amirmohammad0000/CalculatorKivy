@@ -1,0 +1,281 @@
+##$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Page Home
+<Page_Home>:
+    # Start MD Screen
+    MDScreen:
+        MDRaisedButton:
+            mode: "rectangle"
+            text: "Go To About"
+            pos_hint: {"center_x": 0.5, "center_y": 0.02}
+            on_press:
+                root.manager.current = "page_about"
+        # Start MD Card
+        MDCard:
+            size_hint: [0.9, 0.15]
+            pos_hint: {"center_x": 0.5, "center_y": 0.85}
+            padding: 40
+
+            MDTextField:
+                id: result
+                hint_text: "    "
+                mode: "rectangle"
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                font_size: 25
+        # End MD Card
+
+
+        # Start MD Card
+        MDCard:
+            size_hint: None, None
+            width: 368
+            height: 418
+            padding: 5
+            pos_hint: {"center_x": 0.5, "center_y": 0.4}
+
+            # Start MD Grid Layout
+            MDGridLayout:
+                cols: 4
+                rows: 5
+                spacing: 2
+
+                # Start MD Buttons
+                MDFlatButton:
+                    text: "C"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_1()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "%"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_2()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "(-"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_3()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "÷"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_4()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "7"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_5()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "8"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_6()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "9"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_7()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "x"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_8()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "4"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_9()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "5"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_10()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "6"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_11()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "-"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_12()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "1"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_13()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "2"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_14()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "3"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_15()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "+"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_16()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "π"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_17()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "0"
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_18()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "."
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_19()
+                        app.Law()
+
+                MDFlatButton:
+                    text: "="
+                    md_bg_color: 0, 1, 0, 1
+                    font_size: 30
+                    size_hint: None, None
+                    width: 80
+                    height: 80
+                    on_press:
+                        app.button_20()
+                        app.Law()
+                # End MD Buttons
+            # End MD Grid Layout
+        # End MD Card
+    # End MD Screen
+##$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ End Page Home
+
+
+##$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Start Page About
+<Page_About>:
+    MDScreen:
+        MDLabel:
+            text: "This is a simple calculator app made by Amir Mohammad Working with this calculator is very simple and it counts up to the most numbers"
+            halign: "center"
+            pos_hint: {"center_x": 0.5, "center_y": 0.7}
+            font_size: 30
+
+        MDRaisedButton:
+            text: "Go To Home"
+            pos_hint: {"center_x": 0.5, "center_y": 0.02}
+            on_press:
+                root.manager.current = "page_home"
+##$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ End Page About
